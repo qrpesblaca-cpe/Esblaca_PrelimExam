@@ -1,0 +1,12 @@
+---
+# tasks file for install_python3
+- name: Install Python3
+  apt:
+   name: python3
+   state: latest
+   update_cache: yes
+
+- name: Install pip
+  apt:
+   state: latest
+   update_cache: yes

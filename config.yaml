@@ -1,0 +1,14 @@
+---
+- hosts: ubuntu
+  roles:
+    - install_python3
+    - install_java
+
+    - role: change_motd
+      vars:
+        motd: "Ansible Manage node by qrpesblaca"
+
+    - role: create_user
+      vars:
+        username: "qrpesblaca730"
+        name: "Raymond Esblaca"
